@@ -141,3 +141,12 @@ function viewNUpdateNote(e) {
     isUpdate = true;
   }
 }
+
+// Reset All
+function resetAll() {
+  ntitle.value = "";
+  nbody.value = "";
+  isUpdate = false;
+  newNote = "";
+  view = "";
+}
