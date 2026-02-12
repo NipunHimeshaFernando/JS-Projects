@@ -130,3 +130,14 @@ function searchNotes(e) {
     }
   });
 }
+
+// View & Update Note
+function viewNUpdateNote(e) {
+  if (e.target.id === "vw") {
+    record = e.target.parentElement.parentElement;
+    note = record.firstChild;
+    ntitle.value = note.firstChild.textContent;
+    nbody.value = note.lastChild.textContent;
+    isUpdate = true;
+  }
+}
