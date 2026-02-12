@@ -95,3 +95,38 @@ function addNote(e) {
   // Reset all
   resetAll();
 }
+
+// Remove Note
+function removeNote(e) {
+  if (e.target.id === "del") {
+    if (confirm("Are you sure?")) {
+      var tr = e.target.parentElement.parentElement;
+      items.removeChild(tr);
+
+      // Update table
+      noteCount--;
+      if (noteCount === 0) {
+        updateTable();
+      }
+    }
+  }
+}
+
+// Search Notes
+function searchNotes(e) {
+  var searchTxt = e.target.value.toLowerCase();
+
+  var list = items.getElementsByClassName("item");
+
+  var listArr = Array.from(list);
+  listArr.forEach(function (item) {
+    // Get title
+    var noteTitle = item.firstChild.textContent;
+    // Match
+    if (noteTitle.toLowerCase().indexOf(searchTxt) != -1) {
+      item.style.display = "";
+    } else {
+      item.style.display = "none";
+    }
+  });
+}
