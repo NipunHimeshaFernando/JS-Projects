@@ -5,10 +5,10 @@ Users can **add notes**, **view/edit notes**, **delete notes**, and **search not
 
 ## Features
 
-- **Add a note** with a title and note body (input validation included)
-- **View & edit** an existing note (loads the selected note back into the form to update)
+- **Add a note** with a title and note body
+- **View & edit** an existing note
 - **Delete** notes with a confirmation prompt
-- **Search notes** instantly by title (live filtering as you type)
+- **Search notes** instantly by title
 - **Responsive layout** for small screens (mobile-friendly)
 
 ## How it works
