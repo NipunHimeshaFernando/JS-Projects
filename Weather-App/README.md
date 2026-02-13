@@ -2,8 +2,6 @@
 
 A responsive Weather Application built using **JavaScript**, **HTML5**, and **CSS3**, integrated with the **OpenWeatherMap API** to fetch real-time weather data based on user input.
 
-The application allows users to search for a city and instantly view current weather details including temperature, description, humidity, wind speed, and weather icons.
-
 ---
 
 ## Features
@@ -17,7 +15,6 @@ The application allows users to search for a city and instantly view current wea
   - Humidity
   - Wind Speed
 - Dynamic Weather Icon rendering
-- Error handling for invalid city names or network issues
 - Clean and responsive UI design
 
 ---
@@ -26,7 +23,7 @@ The application allows users to search for a city and instantly view current wea
 
 - HTML5
 - CSS3 (Flexbox, responsive layout, styling)
-- JavaScript (ES6+)
+- JavaScript
 - Fetch API
 - Async / Await
 - OpenWeatherMap API
