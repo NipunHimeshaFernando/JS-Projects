@@ -79,3 +79,23 @@ form input[type="submit"]:hover {
   align-items: center;
   flex: 1;
 }
+
+/* Responsiveness */
+@media (max-width: 600px) {
+  form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  form input[type="text"] {
+    width: 100%;
+  }
+
+  form input[type="submit"] {
+    width: 100%;
+  }
+
+  .details {
+    flex-direction: column;
+  }
+}
